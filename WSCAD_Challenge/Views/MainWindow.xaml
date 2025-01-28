@@ -1,0 +1,53 @@
+﻿<Window x:Class="WSCAD_Challenge.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="WSCAD Challenge" Height="450" Width="800" Background="#f4f4f4">
+
+    <Grid>
+        <!-- Define rows and columns -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <!-- Top bar -->
+            <RowDefinition Height="*"/>
+            <!-- Main content -->
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <!-- Main content -->
+            <ColumnDefinition Width="*"/>
+            <!-- Side panel -->
+        </Grid.ColumnDefinitions>
+
+        <!-- Top Bar -->
+        <Border Grid.Row="0" Grid.ColumnSpan="2" Background="DarkBlue" Height="50">
+            <TextBlock Text="WSCAD Challenge Viewer" 
+                       VerticalAlignment="Center" 
+                       HorizontalAlignment="Center" 
+                       FontSize="18" 
+                       Foreground="White" 
+                       FontWeight="Bold"/>
+        </Border>
+
+        <!-- Main Content: ScrollViewer and Canvas -->
+        <ScrollViewer Grid.Row="1" Grid.Column="1" Margin="10" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
+            <Canvas Name="ShapeCanvas" Background="White" 
+                    HorizontalAlignment="Center" 
+                    VerticalAlignment="Center">
+            </Canvas>
+        </ScrollViewer>
+
+        <!-- Side Panel -->
+        <Border Grid.Row="1" Grid.Column="0" Background="#E3F2FD" BorderBrush="#BBDEFB" BorderThickness="1" CornerRadius="10" Padding="10" Margin="10">
+            <StackPanel>
+                <TextBlock Text="Actions" FontSize="16" FontWeight="Bold" Foreground="#0D47A1" Margin="0,0,0,10"/>
+                <Button Content="Load JSON" Command="{Binding LoadJsonCommand}" Width="150" Height="30" Margin="0,5"/>
+                <Button Content="Clear Canvas" IsEnabled="False" Width="150" Height="30" Margin="0,5"/>
+                <Separator Margin="0,10"/>
+                <TextBlock Text="Details" FontSize="16" FontWeight="Bold" Foreground="#0D47A1" Margin="0,0,0,5"/>
+                <!--<TextBlock Text="Hover a shape to see its name and Click on it for more details!" TextWrapping="Wrap" Foreground="#555" FontSize="14"/>-->
+                <TextBlock Name="ShapeNameDetail" Text=":🔨 WORK IN PROGRESS 🔨" TextWrapping="Wrap"/>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>
+

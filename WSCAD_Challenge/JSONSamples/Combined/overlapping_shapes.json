@@ -1,0 +1,17 @@
+[
+    {
+        "type": "circle",
+        "center": "0; 0",
+        "radius": 10.0,
+        "filled": false,
+        "color": "255; 0; 255; 0"
+    },
+    {
+        "type": "triangle",
+        "a": "-5; -5",
+        "b": "5; -5",
+        "c": "0; 5",
+        "filled": true,
+        "color": "255; 255; 0; 255"
+    }
+]

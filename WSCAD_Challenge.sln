@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WSCAD_Challenge", "WSCAD_Challenge\WSCAD_Challenge.csproj", "{3C2DAAB6-8C7B-4829-9C65-634AB8D97568}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{FA7B5F41-2D27-46CB-A7A8-567D7BE69F1A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3C2DAAB6-8C7B-4829-9C65-634AB8D97568}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C2DAAB6-8C7B-4829-9C65-634AB8D97568}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C2DAAB6-8C7B-4829-9C65-634AB8D97568}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C2DAAB6-8C7B-4829-9C65-634AB8D97568}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA7B5F41-2D27-46CB-A7A8-567D7BE69F1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA7B5F41-2D27-46CB-A7A8-567D7BE69F1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA7B5F41-2D27-46CB-A7A8-567D7BE69F1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA7B5F41-2D27-46CB-A7A8-567D7BE69F1A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7AEF7388-B32D-4B85-86B8-C5F22807C18D}
+	EndGlobalSection
+EndGlobal
