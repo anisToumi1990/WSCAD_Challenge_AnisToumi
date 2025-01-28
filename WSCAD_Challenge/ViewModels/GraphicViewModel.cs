@@ -28,7 +28,7 @@ namespace WSCAD_Challenge.ViewModels
         #region Events
 
         public event EventHandler DataLoaded;
-        public event PropertyChangedEventHandler PropertyChanged;
+        public event PropertyChangedEventHandler? PropertyChanged;
 
         #endregion
 

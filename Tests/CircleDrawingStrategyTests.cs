@@ -15,27 +15,6 @@ namespace WSCAD_Challenge.Tests
             _circleDrawingStrategy = new CircleDrawingStrategy();
         }
 
-        //[Fact]
-        //[STAThread]  // Ensure that the test runs on a STA thread
-        //public void Draw_ValidCircle_ShouldDrawOnCanvas()
-        //{
-        //    // Arrange
-        //    Circle circle = new Circle
-        //    (
-        //        new Point(100, 100),
-        //        50,
-        //        true,
-        //        Colors.Red
-        //    );
-        //    var zoom = 1.0;
-
-        //    // Act
-        //    _circleDrawingStrategy.Draw(_mockCanvas.Object, circle, zoom);
-
-        //    // Assert
-        //    _mockCanvas.Verify(c => c.Children.Add(It.IsAny<Ellipse>()), Times.Once); // Verifies ellipse is added
-        //}
-
         [Fact]
         public void GetBoundingBox_ValidCircle_ShouldReturnCorrectBoundingBox()
         {
